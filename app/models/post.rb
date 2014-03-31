@@ -1,3 +1,6 @@
 class Post < ActiveRecord::Base
-	validates :content, :presence => { :message => "Please write something." }
+	has_many:commnets
+  
+  validates :content, :presence => { :message => "Please write something." }
+
 end
